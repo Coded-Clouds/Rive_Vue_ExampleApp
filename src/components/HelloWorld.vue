@@ -1,57 +1,55 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div class="max-w-screen-xl mx-auto px-6 py-20">
+
+    <div id="martyStanding" class="sm:grid sm:grid-cols-10 py-10">
+      <div class="col-span-5 flex items-center justify-center">
+        <h1 class="text-5xl font-black text-left w-full leading-tight">Hey Marty, what's going on?</h1>
+      </div>
+      <div class="col-span-5">
+        <marty-standing />
+      </div>
+    </div>
+
+    <div id="martyBalancing" class="sm:grid sm:grid-cols-10 py-10">
+      <div class="col-span-5 flex items-center justify-center">
+        <h1 class="text-5xl font-black text-left w-full leading-tight">Marty! Watch your balance!</h1>
+      </div>
+      <div class="col-span-5">
+        <marty-balancing />
+      </div>
+    </div>
+
+    <div id="martyBalancing" class="sm:grid sm:grid-cols-10 py-10">
+      <div class="col-span-5 flex items-center justify-center">
+        <h1 class="text-5xl font-black text-left w-full leading-tight">Alright Marty, see you later!</h1>
+      </div>
+      <div class="col-span-5">
+        <marty-waving />
+      </div>
+    </div>
+
   </div>
 </template>
 
 <script>
+import MartyStanding from './Martys/MartyStanding.vue'
+import MartyBalancing from './Martys/MartyBalancing.vue'
+import MartyWaving from './Martys/MartyWaving.vue'
+
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  components: {
+    MartyStanding,
+    MartyBalancing,
+    MartyWaving
+  },
+  data() {
+    return {
+
+    }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
