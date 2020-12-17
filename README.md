@@ -1,4 +1,9 @@
-# rive_vue_example
+# Rive Vue.js Example Application
+
+Live example can be found here: https://rivevue.netlify.app/#/
+
+
+
 
 ## Project setup
 ```
@@ -15,6 +20,3 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# Rive_Vue_Example
